@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
       </Link>
 
       {/* Mobile Menu Button */}
-      <div className="md:hidden text-white">
+      <div className="md:hidden text-white"> 
         <GiHamburgerMenu size={35} />
       </div>
     </nav>
