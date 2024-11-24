@@ -13,46 +13,46 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="flex justify-between items-center p-4 bg-transparent">
-      <h1 className="ml-64 xs:text-2xl flex items-center text-xl sm:text-3xl text-center md:text-3xl xl:text-4xl HDD:text-6xl bg-gradient-to-r from-[#d86cdb]  to-[#6973ff] text-transparent bg-clip-text font-roboto xs:flex">
-        Hassan{" "}
-        <span className="ml-2 bg-gradient-to-r from-[#69E6CD] to-[#e4e709] text-transparent bg-clip-text">
-          Azhar
+      <h1 className="relative text-4xl sm:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-gradientFlow ml-16">
+        <span className="inline-block overflow-hidden whitespace-nowrap border-r-2 border-white pr-2 animate-typing ">
+          Hassan Azhar
         </span>
+        <span className="animate-blink">|</span>
       </h1>
 
       {/* Menu Items */}
       <div className="hidden md:flex space-x-8">
         <Link
           href="/"
-          className={`${menuOpen === "Home" ? "text-green-500 underline underline-offset-8" : "text-white hover:text-green-300"} font-medium`}
+          className={`${menuOpen === "Home" ? "text-2xl text-green-500 underline underline-offset-8" : "text-white hover:text-green-300"} font-medium`}
           onClick={() => handlesetMenuOpen("Home")}
         >
           Home
         </Link>
         <Link
           href="/about"
-          className={`${menuOpen === "About" ? "text-green-500 underline underline-offset-8" : "text-white hover:text-green-300"} font-medium`}
+          className={`${menuOpen === "About" ? "text-2xl text-green-500 underline underline-offset-8" : "text-white hover:text-green-300"} font-medium`}
           onClick={() => handlesetMenuOpen("About")}
         >
           About
         </Link>
         <Link
           href="/projects"
-          className={`${menuOpen === "Projects" ? "text-green-500 underline underline-offset-8" : "text-white hover:text-green-300"} font-medium`}
+          className={`${menuOpen === "Projects" ? "text-2xl text-green-500 underline underline-offset-8" : "text-white hover:text-green-300"} font-medium`}
           onClick={() => handlesetMenuOpen("Projects")}
         >
           Projects
         </Link>
         <Link
           href="/testimonial"
-          className={`${menuOpen === "Testimonial" ? "text-green-500 underline underline-offset-8" : "text-white hover:text-green-300"} font-medium`}
+          className={`${menuOpen === "Testimonial" ? "text-2xl text-green-500 underline underline-offset-8" : "text-white hover:text-green-300"} font-medium`}
           onClick={() => handlesetMenuOpen("Testimonial")}
         >
           Testimonial
         </Link>
         <Link
           href="/contact"
-          className={`${menuOpen === "Contact" ? "text-green-500 underline underline-offset-8" : "text-white hover:text-green-300"} font-medium`}
+          className={`${menuOpen === "Contact" ? "text-2xl text-green-500 underline underline-offset-8" : "text-white hover:text-green-300"} font-medium`}
           onClick={() => handlesetMenuOpen("Contact")}
         >
           Contact
@@ -61,10 +61,12 @@ const Navbar: React.FC = () => {
 
       {/* Resume Button */}
       <Link
-        href="/resume"
+        href="/Hassan_Azhar_Resume.pdf"
+        download
+        target={"_blank"}
         className="hidden md:block bg-gray-700 text-white py-2 px-4 rounded-md hover:bg-gray-600 mr-40"
       >
-        Resume
+        <span className="relative 2xl:text-2xl">Resume</span>
       </Link>
 
       {/* Mobile Menu Button */}
