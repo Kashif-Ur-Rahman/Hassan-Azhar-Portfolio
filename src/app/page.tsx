@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
 import { GrGithub } from "react-icons/gr";
+import Image from "next/image";
 // import ParticleBackground from "../components/particle/Particles";
 
 const Main = () => {
@@ -17,10 +18,10 @@ const Main = () => {
                 <div className="grid grid-cols-1 lg:gap-x-20 gap-0 lg:grid-cols-5 ">
                   <div className="max-w-2xl lg:col-span-3">
                     <h1 className="text-4xl font-bold tracking-tight text-zinc-400 dark:text-zinc-100 sm:text-5xl lg:text-5xl">
-                      I help <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-red-500">
-                        companies 
-                        </span> to 2x their achievement rates by developing {" "}
-                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-teal-500">
+                      I help <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-teal-500">
+                        companies
+                      </span> to 2x their achievement rates by developing {" "}
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-500">
                         {" "}
                         quality software{" "}
                       </span>{" "}
@@ -57,6 +58,15 @@ const Main = () => {
                       <Link target="_blank" href="https://github.com/hassanazharkhan" className="p-1 -m-1 ">
                         <GrGithub className="w-6 h-6 transition fill-zinc-500 hover:fill-teal-300 " />
                       </Link>
+
+                      <Image
+                        src="/Hassan-Azhar.jpeg"
+                        alt=""
+                        width={370}
+                        height={160}
+                        className="object-cover transition grayscale hover:grayscale-0 rounded-2xl bg-zinc-100 dark:bg-zinc-800 lg:w-[350px] lg:h-[350px] md:w-[300px] md:h-[300px] sm:w-[250px] sm:h-[250px] ml-[596px] -mt-[396px]"
+                      />
+
                     </div>
                   </div>
                 </div>

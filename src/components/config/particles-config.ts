@@ -1,11 +1,11 @@
-
+"use client";
 
 const particlesConfig = 
     {
         autoPlay: true,
         background: {
           color: {
-            value: "#000000"
+            value: "#ffff"
           },
           image: "",
           position: "",
@@ -17,7 +17,7 @@ const particlesConfig =
           composite: "destination-out",
           cover: {
             color: {
-              value: "#fff"
+              value: "white"
             },
             opacity: 1
           },
